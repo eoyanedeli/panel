@@ -25,7 +25,7 @@ from datetime import timedelta
 
 # jupyter_dash.default_mode="external"
 
-conn = sqlite3.connect('students.db')
+conn = sqlite3.connect('https://github.com/eoyanedeli/panel/raw/main/students.db')
 cursor = conn.cursor()
 
 cursor.execute("SELECT * FROM hitos")
