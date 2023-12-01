@@ -72,32 +72,33 @@ fig_2 = px.timeline(
     range_color = [20,100]
 )
 
-# fig_1.add_shape(
-#     go.layout.Shape(
-#         type="line",
-#         x0=current_date,
-#         x1=current_date,
-#         y0=0,
-#         y1=1,
-#         xref="x",
-#         yref="paper",
-#         line=dict(color="red", width=2)
-#     )
-# )
+fig_1.add_shape(
+    go.layout.Shape(
+        type="line",
+        x0=current_date,
+        x1=current_date,
+        y0=0,
+        y1=1,
+        xref="x",
+        yref="paper",
+        line=dict(color="red", width=2)
+    )
+)
 
-# fig_2.add_shape(
-#     go.layout.Shape(
-#         type="line",
-#         x0=current_date,
-#         x1=current_date,
-#         y0=0,
-#         y1=1,
-#         xref="x",
-#         yref="paper",
-#         line=dict(color="red", width=2)
-#     )
-# )
+fig_2.add_shape(
+    go.layout.Shape(
+        type="line",
+        x0=current_date,
+        x1=current_date,
+        y0=0,
+        y1=1,
+        xref="x",
+        yref="paper",
+        line=dict(color="red", width=2)
+    )
+)
 
+server = app.server
 
 app.layout = dbc.Container([
     html.Div(className='row', children='Panel de control de licitaciones.',
